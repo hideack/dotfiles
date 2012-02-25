@@ -1,0 +1,22 @@
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+set ruler
+set title
+
+set autoindent
+set number
+set showmatch
+set smartindent
+set whichwrap=b,s,h,l,<,>,[,]
+set nowrapscan
+set nobackup
+set nohlsearch
+
+augroup InsertHook
+autocmd!
+autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
+autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
+augroup END
+
